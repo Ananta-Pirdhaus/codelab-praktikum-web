@@ -1,48 +1,74 @@
-/* Navbar Styles */
-.navbar {
-  background-color: rgba(51, 51, 51, 0.5); /* Warna latar belakang navbar dengan tingkat transparansi 50% */
-  padding: 10px 0; /* Padding atas dan bawah */
-  color: #fff; /* Warna teks */
+/* Reset some default styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.navbar-container {
+/* Style the navigation bar */
+.navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 10px;
 }
 
-.logo {
-  font-size: 1.5rem; /* Ukuran font untuk logo */
-  font-weight: bold; /* Ketebalan font */
+/* Style the logo */
+.navbar .logo {
+  /* color: #fff; */
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.nav-links {
-  list-style: none; /* Menghilangkan bullet points dari daftar */
-  padding: 0;
+/* Center the menu items horizontally */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the menu items */
+.navbar li {
+  margin: 0 20px; /* Add spacing between menu items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Style the signup and login buttons */
+.navbar .buttons {
   display: flex;
 }
 
-.nav-links li {
-  margin: 0 10px; /* Jarak antara setiap elemen daftar */
+.navbar .buttons button {
+  /* background-color: #66f; */
+  /* color: #fff; */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
 }
 
-.nav-links a {
-  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
-  color: #fff; /* Warna teks */
-  font-weight: bold; /* Ketebalan font */
-  transition: color 0.3s; /* Transisi warna ketika mouse hover */
+.navbar .buttons button:hover {
+  background-color: #444;
 }
 
-.nav-links a:hover {
-  color: #ff6347; /* Warna teks ketika mouse hover */
+#signup {
+  background-color: white;
+  border: #333 2px solid;
+  color: #333;
 }
-
-/* Animasi menggunakan AOS */
-.navbar-container [data-aos] {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.navbar-container [data-aos].aos-animate {
-  opacity: 1;
+#login {
+  background-color: rgb(77, 163, 255);
+  color: white;
 }

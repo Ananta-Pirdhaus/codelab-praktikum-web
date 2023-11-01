@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import AboutSkate from "../components/AboutSkate";
+import AboutSection from "../components/AboutSection";
+
 
 const AboutPage = () => {
   return (
     <div>
       <Navbar />
-      <AboutSkate />
+      <AboutSection />
       <Footer />
     </div>
   );

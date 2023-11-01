@@ -3,28 +3,39 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/navbar.css";
 
+
 const Navbar = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Menginisialisasi AOS dengan durasi animasi 1000ms
   }, []);
 
+
   return (
-    <nav className="navbar" data-aos="fade-down">
-      <div className="navbar-container">
-        <div className="logo">Logo</div>
-        <ul className="nav-links">
-          <li data-aos="fade-right">
+    <>
+      <div class="navbar">
+        <a class="logo" href="/">
+          <img
+            src="https://vscode.dev/github/Ananta-Pirdhaus/codelab-praktikum-web/blob/main/src/Assets/logo-lab.png"
+            alt="yoloo"
+          />
+        </a>
+        <ul>
+          <li>
             <a href="/">Home</a>
           </li>
-          <li data-aos="fade-right" data-aos-delay="100">
-            <a href="/about">About</a>
-          </li>
-          <li data-aos="fade-right" data-aos-delay="200">
+          <li>
             <a href="/contact">Contact</a>
           </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
         </ul>
+        <div class="buttons">
+          <button id="signup">Sign Up</button>
+          <button id="login">Login</button>
+        </div>
       </div>
-    </nav>
+    </>
   );
 };
 

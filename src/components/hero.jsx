@@ -10,19 +10,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="hero-section" data-aos="fade-in">
-      <div className="hero-content">
-        <h1 className="hero-title" data-aos="fade-up">
-          Welcome to Our Website
-        </h1>
-        <p className="hero-description" data-aos="fade-up" data-aos-delay="100">
-          Explore amazing content and discover new experiences.
-        </p>
-        <button className="hero-button" data-aos="fade-up" data-aos-delay="200">
-          Get Started
-        </button>
+    <div class="hero">
+      <div class="container">
+        <h1>Selamat Datang</h1>
+        <p>di website Praktikum Pemprograman Website</p>
       </div>
-    </section>
+    </div>
   );
 };
 

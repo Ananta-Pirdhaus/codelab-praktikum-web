@@ -1,0 +1,15 @@
+/* AboutSkate.css */
+
+.skateboard-ad {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.skateboard-ad a {
+  text-decoration: none;
+}
+
+.skateboard-ad img {
+  max-width: 100%;
+  height: auto;
+}

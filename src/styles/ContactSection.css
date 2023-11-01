@@ -1,0 +1,57 @@
+/* ContactSection.css */
+
+.contact-section {
+  background-color: #f8f8f8; /* Warna latar belakang contact section */
+  padding: 50px 0; /* Padding atas dan bawah */
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 2rem; /* Ukuran font untuk judul */
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1.2rem; /* Ukuran font untuk teks */
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem; /* Ukuran font untuk label */
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem; /* Ukuran font untuk input dan textarea */
+  border: 1px solid #ccc; /* Border dengan warna abu-abu muda */
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6347; /* Warna tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transisi warna ketika hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #e74c3c; /* Warna tombol saat hover */
+}

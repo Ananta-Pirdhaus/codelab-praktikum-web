@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer';
+import HeroSection from '../components/hero';
 
 
  
@@ -8,7 +9,7 @@ const HomePage = () => {
     return (
       <div>
         <Navbar />
-        <h1>INI HOME</h1>
+        <HeroSection />
        <Footer/>
       </div>
     );

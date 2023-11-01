@@ -1,0 +1,48 @@
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(51, 51, 51, 0.5); /* Warna latar belakang navbar dengan tingkat transparansi 50% */
+  padding: 10px 0; /* Padding atas dan bawah */
+  color: #fff; /* Warna teks */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem; /* Ukuran font untuk logo */
+  font-weight: bold; /* Ketebalan font */
+}
+
+.nav-links {
+  list-style: none; /* Menghilangkan bullet points dari daftar */
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px; /* Jarak antara setiap elemen daftar */
+}
+
+.nav-links a {
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+  color: #fff; /* Warna teks */
+  font-weight: bold; /* Ketebalan font */
+  transition: color 0.3s; /* Transisi warna ketika mouse hover */
+}
+
+.nav-links a:hover {
+  color: #ff6347; /* Warna teks ketika mouse hover */
+}
+
+/* Animasi menggunakan AOS */
+.navbar-container [data-aos] {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.navbar-container [data-aos].aos-animate {
+  opacity: 1;
+}

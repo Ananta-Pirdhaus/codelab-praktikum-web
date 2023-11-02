@@ -1,5 +1,9 @@
 import React from "react";
 import"../styles/footer.css";
+import logoIlab from "../Assets/logo-ilab.png";
+import facebookLogo from "../Assets/logo-facebook.png"
+import twitterLogo from "../Assets/logo-twitter.png"
+import instagramLogo from "../Assets/logo-instagram.png"
 
 const Footer = () => {
   return (
@@ -8,7 +12,7 @@ const Footer = () => {
         <p></p>
       </dif>
       <div className="footer-left">
-        <img src="../Assets/logo-ilab.png" alt="Logo" className="logo" />
+        <img src={logoIlab} alt="Logo" className="logo" />
         <p className="copyright">
           &copy; {new Date().getFullYear()} Your Website Name
         </p>
@@ -31,7 +35,7 @@ const Footer = () => {
         <p className="content title">Contact Us</p>
         <div className="content">
           <img
-            src="../Assets/logo-facebook.png"
+            src={facebookLogo}
             alt="Facebook"
             className="ContactLogo"
           />
@@ -39,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="content">
           <img
-            src="../Assets/logo-twitter.png"
+            src={twitterLogo}
             alt="Twitter"
             className="ContactLogo"
           />
@@ -47,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="content">
           <img
-            src="../Assets/logo-instagram.png"
+            src={instagramLogo}
             alt="Instagram"
             className="ContactLogo"
           />
